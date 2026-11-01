@@ -14,4 +14,8 @@ dependencies {
     implementation("org.seleniumhq.selenium:selenium-java:4.46.0")
     // Source: https://mvnrepository.com/artifact/org.testng/testng
     testImplementation("org.testng:testng:7.10.2")
+    // Source: https://mvnrepository.com/artifact/com.github.javafaker/javafaker
+    implementation("com.github.javafaker:javafaker:1.0.2")
+    // for JSONObject
+    testImplementation("org.json:json:20240303")
 }
