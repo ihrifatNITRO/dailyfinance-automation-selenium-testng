@@ -16,5 +16,32 @@
         "address": "31924 Schamberger Camp",
         "gender": "Female",
         "email": "abra3c7e8152-56ae-41e3-a387-20597a9914a1@gmail.com"
+    },
+    {
+        "firstName": "Dylan",
+        "lastName": "Ebert",
+        "password": "go34u5hzy0tdwe",
+        "phoneNumber": "01435277552",
+        "address": "917 Margurite Mews",
+        "gender": "Female",
+        "email": "abraab6b9a68-0f5a-4c50-99e2-b23bd3d8ddff@gmail.com"
+    },
+    {
+        "firstName": "Len",
+        "lastName": "Hettinger",
+        "password": "2gotblmttlhnz1",
+        "phoneNumber": "01469183001",
+        "address": "72503 Giovanni Glens",
+        "gender": "Female",
+        "email": "abra68106f0b-3796-49fd-ae7b-b30e3bdd702d@gmail.com"
+    },
+    {
+        "firstName": "Jeffrey",
+        "lastName": "Effertz",
+        "password": "kold672m",
+        "phoneNumber": "01453331026",
+        "address": "69304 Nicolas Mountains",
+        "gender": "Male",
+        "email": "abra5dcc48af-867e-4b9d-9abb-58673c33c452@gmail.com"
     }
 ]
