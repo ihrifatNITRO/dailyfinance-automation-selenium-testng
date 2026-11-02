@@ -1,12 +1,17 @@
 package utils;
 
 import com.github.javafaker.Faker;
-
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.time.format.TextStyle;
+import java.util.Locale;
 import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Utils {
 
-    // For registration part
+    // For registration and login part
     Faker faker = new Faker();
     public String getFirstName(){
         return faker.name().firstName();
@@ -34,4 +39,28 @@ public class Utils {
         return gender;
     }
 
+    // For add-cost part
+    public String getItemName(){
+        return faker.funnyName().name();
+    }
+    public double getAmount(){
+        return faker.number().numberBetween(100, 999);
+    }
+    public String getPurchaseDate() {
+        // Pick a random epoch day between 2020-01-01 and 2025-12-31
+        long minDay = LocalDate.of(2020, 1, 1).toEpochDay();
+        long maxDay = LocalDate.of(2025, 12, 31).toEpochDay();
+        long randomDay = ThreadLocalRandom.current().nextLong(minDay, maxDay);
+
+        // Convert back to date and format directly to "MMddyyyy"
+        LocalDate randomDate = LocalDate.ofEpochDay(randomDay);
+        return randomDate.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+    }
+    public String getMonth(){
+        int month = ThreadLocalRandom.current().nextInt(1, 13);
+        return Month.of(month).getDisplayName(TextStyle.FULL, Locale.ENGLISH);
+    }
+    public String getRemarks(){
+        return faker.dune().quote();
+    }
 }

@@ -45,7 +45,22 @@ public class AddCostPage {
         txtRemarks.sendKeys(remarks);
         btnSubmit.click();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        Alert successAlert = wait.until(
+                ExpectedConditions.alertIsPresent()
+        );
+        String successMsg = successAlert.getText();
+        successAlert.accept();
+        return successMsg;
+    }
+
+    public String doAddCostRequires(String itemName, double amount) {
+
+        txtItemName.sendKeys(itemName);
+        numAmount.sendKeys(String.valueOf(amount));
+        btnSubmit.click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         Alert successAlert = wait.until(
                 ExpectedConditions.alertIsPresent()
         );
