@@ -26,9 +26,9 @@ public class AddCostPage {
     WebElement btnSubmit;
 
     // saving the driver in private final so that this can be used here only and for one time
-    private final WebDriver driver;
+    private final WebDriver driver1;
     public AddCostPage(WebDriver driver) {
-        this.driver = driver; // saving for future use here on one time
+        this.driver1 = driver; // saving for future use here on one time
         PageFactory.initElements(driver, this);
     }
 
@@ -45,7 +45,7 @@ public class AddCostPage {
         txtRemarks.sendKeys(remarks);
         btnSubmit.click();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(10));
         Alert successAlert = wait.until(
                 ExpectedConditions.alertIsPresent()
         );
@@ -60,7 +60,7 @@ public class AddCostPage {
         numAmount.sendKeys(String.valueOf(amount));
         btnSubmit.click();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(10));
         Alert successAlert = wait.until(
                 ExpectedConditions.alertIsPresent()
         );

@@ -23,7 +23,7 @@ public class LoginTest extends SetUp {
         Path file = Path.of("src/test/resources/Users.json");
         JSONArray users = new JSONArray(Files.readString(file));
         // Picking 0-index user details for Login
-        JSONObject user = users.getJSONObject(0);
+        JSONObject user = users.getJSONObject(users.length() - 1);
         String email = user.getString("email");
         String password = user.getString("password");
         // Doing Login using the details

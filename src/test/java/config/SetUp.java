@@ -16,7 +16,7 @@ public class SetUp {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://dailyfinance.roadtocareer.net/");
     }
-//    @AfterTest
+    @AfterTest
     public void tearDown(WebDriver driver){
         driver.quit();
     }

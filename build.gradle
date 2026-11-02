@@ -19,3 +19,9 @@ dependencies {
     // for JSONObject
     testImplementation("org.json:json:20240303")
 }
+
+test{
+    useTestNG(){
+        suites "./src/test/resources/suite.xml"
+    }
+}

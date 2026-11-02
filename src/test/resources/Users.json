@@ -1,9 +1,20 @@
-[{
-    "firstName": "Elke",
-    "lastName": "Grant",
-    "password": "4oo7hv4znr",
-    "phoneNumber": "01452535800",
-    "address": "97786 Alvin Circles",
-    "gender": "Male",
-    "email": "ihrifat.rr+98d40687-6c86-46d6-afc6-4eec44ecffae@gmail.com"
-}]
+[
+    {
+        "firstName": "Laurence",
+        "lastName": "Kautzer",
+        "password": "v6q0s4pl3h2hcn",
+        "phoneNumber": "01465708705",
+        "address": "283 Senger Haven",
+        "gender": "Female",
+        "email": "ihrifat.rr+e49ff5f5-e5d4-4747-9757-af83dbeedf3a@gmail.com"
+    },
+    {
+        "firstName": "Georgene",
+        "lastName": "Ryan",
+        "password": "cf4czpecctr",
+        "phoneNumber": "01498028578",
+        "address": "31924 Schamberger Camp",
+        "gender": "Female",
+        "email": "abra3c7e8152-56ae-41e3-a387-20597a9914a1@gmail.com"
+    }
+]

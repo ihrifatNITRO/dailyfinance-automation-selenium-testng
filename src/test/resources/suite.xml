@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="Daily Finance TestNG Automation">
+    <test name="User Registration">
+        <classes>
+            <class name="tests.RegistrationTest"></class>
+        </classes>
+    </test>
+    <test name="User Login">
+        <classes>
+            <class name="tests.LoginTest"></class>
+        </classes>
+    </test>
+    <test name="User Dashboard">
+        <classes>
+            <class name="tests.UserTest"></class>
+        </classes>
+    </test>
+    <test name="Add New Item">
+        <classes>
+            <class name="tests.AddCostTest"></class>
+        </classes>
+    </test>
+    <test name="Profile Email Update">
+        <classes>
+            <class name="tests.ProfileUpdateTest"></class>
+        </classes>
+    </test>
+</suite>
