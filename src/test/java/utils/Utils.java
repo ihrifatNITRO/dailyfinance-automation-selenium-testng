@@ -54,7 +54,7 @@ public class Utils {
 
         // Convert back to date and format directly to "MMddyyyy"
         LocalDate randomDate = LocalDate.ofEpochDay(randomDay);
-        return randomDate.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+        return randomDate.format(DateTimeFormatter.ofPattern("ddMMyyyy"));
     }
     public String getMonth(){
         int month = ThreadLocalRandom.current().nextInt(1, 13);

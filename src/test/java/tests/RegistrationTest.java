@@ -19,8 +19,42 @@ import java.time.Duration;
 import java.util.*;
 
 public class RegistrationTest extends SetUp {
-    @Test
-    public void doReg(){
+    @Test(priority=1, description = "Registration with invalid info like email other than Gmail")
+    public void deRegInvalid(){
+        RegistrationPage registrationPage = new RegistrationPage(driver);
+        // clicking Register to enter registration page
+        driver.findElement(By.partialLinkText("Register")).click();
+        // getting random user details on Utils for registration
+        Utils utils = new Utils();
+        String firstName = utils.getFirstName();
+        String lastName = utils.getLastName();
+        String email = "adf@yahoo.com";
+        String password = utils.getPassword();
+        String phoneNumber = utils.getPhoneNumber();
+        String address = utils.getAddress();
+        int gender = utils.getGender();
+        // calling doReg method inside the RegistrationPage
+        registrationPage.doReg(firstName, lastName, email, password,
+                phoneNumber, address, gender);
+
+        // waiting for invalid toast
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Locating the success toast
+        By successToast = By.cssSelector(".Toastify__toast--error .Toastify__toast-body");
+        // Performing the assertion
+        Assert.assertTrue(
+                wait.until(
+                        // Waiting for the expected message
+                        ExpectedConditions.textToBePresentInElementLocated(
+                                successToast, "Only Gmail addresses are accepted."
+                        )
+                )
+        );
+        System.out.println("Registration Failed!");
+    }
+
+    @Test(priority = 2, description = "Registration with valid info")
+    public void doRegValid(){
         RegistrationPage registrationPage = new RegistrationPage(driver);
         
         // clicking Register to enter registration page

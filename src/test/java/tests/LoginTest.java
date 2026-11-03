@@ -17,8 +17,32 @@ import java.nio.file.Path;
 import java.time.Duration;
 
 public class LoginTest extends SetUp {
-    @Test
-    public void doLogin() throws IOException {
+    @Test(priority = 1, description = "Login with invalid credentials")
+    public void doLoginInvalid() throws IOException {
+        // Getting registered user detail JSONArray
+        Path file = Path.of("src/test/resources/Users.json");
+        JSONArray users = new JSONArray(Files.readString(file));
+        // Picking 0-index user details for Login
+        JSONObject user = users.getJSONObject(users.length() - 1);
+        String email = "wrongemail777@gmail.com";
+        String password = user.getString("password");
+        // Doing Login using the details
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.doLogin(email, password);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        Assert.assertTrue(
+                wait.until(
+                        ExpectedConditions.textToBePresentInElementLocated(
+                                By.cssSelector("p"), "Invalid email or password"
+                        )
+                )
+        );
+        System.out.println("Invalid email or password");
+    }
+
+    @Test(priority = 1, description = "Login with valid credentials")
+    public void doLoginValid() throws IOException {
         // Getting registered user detail JSONArray
         Path file = Path.of("src/test/resources/Users.json");
         JSONArray users = new JSONArray(Files.readString(file));

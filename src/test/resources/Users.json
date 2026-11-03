@@ -43,5 +43,95 @@
         "address": "69304 Nicolas Mountains",
         "gender": "Male",
         "email": "abra5dcc48af-867e-4b9d-9abb-58673c33c452@gmail.com"
+    },
+    {
+        "firstName": "Zachary",
+        "lastName": "Brown",
+        "password": "pcylonr24k8ctu",
+        "phoneNumber": "01416268508",
+        "address": "07849 Brendan Bridge",
+        "gender": "Female",
+        "email": "abrae1193a31-a1c8-4fde-8c35-9fff97ff1444@gmail.com"
+    },
+    {
+        "firstName": "Raymundo",
+        "lastName": "Kohler",
+        "password": "ufjs3147cowy",
+        "phoneNumber": "01466636288",
+        "address": "4156 Weimann Landing",
+        "gender": "Male",
+        "email": "abraa478abf9-e27c-4bfd-9b68-d396d659b6d1@gmail.com"
+    },
+    {
+        "firstName": "Elroy",
+        "lastName": "Torp",
+        "password": "2754t7t3m",
+        "phoneNumber": "01471137792",
+        "address": "931 Ortiz Lakes",
+        "gender": "Male",
+        "email": "abra6fc148d9-ed96-40d1-93cd-f6efa6a10505@gmail.com"
+    },
+    {
+        "firstName": "Dana",
+        "lastName": "Schimmel",
+        "password": "zr4ouli0c1cxnjt",
+        "phoneNumber": "01431475937",
+        "address": "331 Vance Grove",
+        "gender": "Female",
+        "email": "abrab63566d4-2982-4bdd-b970-fdea4562bd73@gmail.com"
+    },
+    {
+        "firstName": "Olive",
+        "lastName": "Barrows",
+        "password": "0zrno4k61ruxd",
+        "phoneNumber": "01464379555",
+        "address": "47131 Gorczany Ports",
+        "gender": "Male",
+        "email": "abra66513bf6-8e58-4846-ae7b-eb73bea8fa28@gmail.com"
+    },
+    {
+        "firstName": "Blair",
+        "lastName": "Gorczany",
+        "password": "1jgqlbahtkr",
+        "phoneNumber": "01437401554",
+        "address": "9269 Ben Rapid",
+        "gender": "Male",
+        "email": "abrae8da6ab8-c4df-4f8d-8b58-10316324d56c@gmail.com"
+    },
+    {
+        "firstName": "Carrol",
+        "lastName": "Powlowski",
+        "password": "s54zg829ae93r",
+        "phoneNumber": "01449472963",
+        "address": "9279 Berry Grove",
+        "gender": "Female",
+        "email": "abraefd60ac1-3e3b-41bc-bdca-c6c0cb5ac5e7@gmail.com"
+    },
+    {
+        "firstName": "Zackary",
+        "lastName": "Bayer",
+        "password": "ro9vl1i2rwc",
+        "phoneNumber": "01418684466",
+        "address": "855 Josue Ranch",
+        "gender": "Male",
+        "email": "ihrifat.rr+5874055f-2728-4342-92eb-f0ad1e5252ac@gmail.com"
+    },
+    {
+        "firstName": "Dante",
+        "lastName": "Schowalter",
+        "password": "7kp42brgiu1r",
+        "phoneNumber": "01409472875",
+        "address": "81274 Medhurst Orchard",
+        "gender": "Male",
+        "email": "ihrifat.rr+2961291d-172e-4fcb-9c74-5817c0e1a2c9@gmail.com"
+    },
+    {
+        "firstName": "Dorene",
+        "lastName": "Roberts",
+        "password": "37n29czf5",
+        "phoneNumber": "01466643019",
+        "address": "192 Durgan Ferry",
+        "gender": "Female",
+        "email": "abra416d0f86-f823-4679-b2d4-bc952a78f88f@gmail.com"
     }
 ]
